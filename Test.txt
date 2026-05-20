@@ -2,7 +2,11 @@
 2 buinhu
 3 cuong dz
 4 nhat dz
+<<<<<<< HEAD
 5 我不喜欢 thái sơn 
+=======
+5 nalsiucapdepzai
+>>>>>>> origin/nhanh_cua_nal
 6 vì anh quá cô đơn
 7 không phải đâu
 8 i love you
