@@ -14,7 +14,7 @@ services:
       - "3306:3306"        # expose ra ngoài để DBeaver/MySQL Workbench kết nối được
     volumes:
       - mysql_data:/var/lib/mysql          # dữ liệu bền vững, không mất khi restart
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql  # chạy SQL khởi tạo lần đầu
+      - ./e0bmanager_db.sql:/docker-entrypoint-initdb.d/e0bmanager_db.sql  # chạy SQL khởi tạo lần đầu
     networks:
       - e0bmanager_net
     healthcheck:

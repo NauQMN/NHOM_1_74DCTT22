@@ -1,6 +1,11 @@
 package com.e0bmanager.server_api.models;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,6 +27,7 @@ public class User {
     private String password;
     @Column(name ="fullname")
     private String fullname; // Tên đầy đủ để hiển thị trên MainForm
+    private String role;
     private String phone;
     private String cccd;
     @Column(columnDefinition = "LONGTEXT") // Dùng LONGTEXT để chứa chuỗi ảnh Base64 dung lượng lớn
