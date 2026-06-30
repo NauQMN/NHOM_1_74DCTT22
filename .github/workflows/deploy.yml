@@ -46,7 +46,7 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: 2233
           script: |
-            script: |
+          
             # Di chuyển vào thư mục chứa file docker-compose.yml trên server
             cd /duong_dan_toi_thu_muc_chua_file_compose
             
