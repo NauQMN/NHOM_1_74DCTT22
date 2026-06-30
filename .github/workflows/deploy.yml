@@ -31,7 +31,13 @@ jobs:
           push: true
           # Thay đổi địa chỉ lưu trữ thành ghcr.io. Tên user bắt buộc viết CHỮ THƯỜNG.
           tags: ghcr.io/nauqmn/java-server:latest
-
+          
+      - name: Kết nối vào mạng ZeroTier
+        uses: zerotier/github-action@v1.0.1
+        with:
+          network_id: ${{ secrets.ZEROTIER_NETWORK_ID }}
+          auth_token: ${{ secrets.ZEROTIER_CENTRAL_TOKEN }}
+      
       - name: 4. Deploy lên Server qua SSH
         uses: appleboy/ssh-action@master
         with:
