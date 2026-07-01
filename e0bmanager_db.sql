@@ -18,6 +18,11 @@
 --
 -- Table structure for table `ban_an`
 --
+CREATE DATABASE IF NOT EXISTS e0bmanager_db
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+USE e0bmanager_db;
 
 DROP TABLE IF EXISTS `ban_an`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
